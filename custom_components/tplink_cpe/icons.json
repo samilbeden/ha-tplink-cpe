@@ -1,0 +1,33 @@
+{
+  "entity": {
+    "sensor": {
+      "uptime": { "default": "mdi:clock-start" },
+      "load_1m": { "default": "mdi:chip" },
+      "load_5m": { "default": "mdi:chip" },
+      "load_15m": { "default": "mdi:chip" },
+      "memory_used_percent": { "default": "mdi:memory" },
+      "essid": { "default": "mdi:wifi" },
+      "mode": { "default": "mdi:access-point" },
+      "channel": { "default": "mdi:radio-tower" },
+      "frequency": { "default": "mdi:sine-wave" },
+      "bit_rate": { "default": "mdi:speedometer" },
+      "tx_power": { "default": "mdi:antenna" },
+      "signal": { "default": "mdi:wifi" },
+      "noise": { "default": "mdi:waveform" },
+      "link_quality": { "default": "mdi:wifi-strength-3" },
+      "connected_clients": { "default": "mdi:devices" },
+      "avg_client_rssi": { "default": "mdi:wifi-strength-2" },
+      "min_client_rssi": { "default": "mdi:wifi-strength-1" }
+    },
+    "binary_sensor": {
+      "connectivity": {
+        "default": "mdi:lan-connect",
+        "state": { "off": "mdi:lan-disconnect" }
+      }
+    },
+    "button": {
+      "restart": { "default": "mdi:restart" },
+      "refresh": { "default": "mdi:refresh" }
+    }
+  }
+}

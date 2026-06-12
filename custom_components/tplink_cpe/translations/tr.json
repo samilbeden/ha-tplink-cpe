@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TP-Link CPE Ekle",
+        "description": "Bir CPE cihazına SSH ile bağlan.",
+        "data": {
+          "name": "Ad",
+          "host": "Host / IP adresi",
+          "port": "SSH portu",
+          "username": "Kullanıcı adı",
+          "password": "Parola"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Yeniden kimlik doğrula",
+        "description": "{name} için parolayı güncelle.",
+        "data": {
+          "password": "Parola"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "SSH bağlantısı kurulamadı.",
+      "invalid_auth": "Kullanıcı adı veya parola hatalı.",
+      "no_wireless": "Cihazda kablosuz arayüz tespit edilemedi.",
+      "unknown": "Beklenmeyen hata."
+    },
+    "abort": {
+      "already_configured": "Bu cihaz zaten yapılandırılmış.",
+      "reauth_successful": "Yeniden kimlik doğrulama başarılı."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Seçenekler",
+        "data": {
+          "scan_interval": "Güncelleme aralığı (saniye)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "uptime": { "name": "Çalışma süresi" },
+      "load_1m": { "name": "CPU yükü (1dk)" },
+      "load_5m": { "name": "CPU yükü (5dk)" },
+      "load_15m": { "name": "CPU yükü (15dk)" },
+      "memory_used_percent": { "name": "Bellek kullanımı" },
+      "essid": { "name": "SSID" },
+      "mode": { "name": "Kablosuz mod" },
+      "channel": { "name": "Kanal" },
+      "frequency": { "name": "Frekans" },
+      "bit_rate": { "name": "Bit hızı" },
+      "tx_power": { "name": "TX gücü" },
+      "signal": { "name": "Sinyal" },
+      "noise": { "name": "Gürültü" },
+      "link_quality": { "name": "Link kalitesi" },
+      "connected_clients": { "name": "Bağlı istemci" },
+      "avg_client_rssi": { "name": "Ortalama istemci RSSI" },
+      "min_client_rssi": { "name": "En zayıf istemci RSSI" }
+    },
+    "binary_sensor": {
+      "connectivity": { "name": "Bağlantı" }
+    },
+    "button": {
+      "restart": { "name": "Yeniden başlat" },
+      "refresh": { "name": "Yenile" }
+    }
+  }
+}
